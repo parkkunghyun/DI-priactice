@@ -13,11 +13,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AppConfig {
    // 각 메서드에Bean 을 작성!
-    // call memberService
-    // call memberRepository
-    // call memberRepository
-    // call orderService
-    // call memberRepository
 
     // 실제로는 memberService memberRepository orderService 한번씩만나옴!
     // spring이 어떻게든 싱글톤을 보장하려고 하는구나
