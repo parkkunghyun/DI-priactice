@@ -28,7 +28,6 @@ public class OrderServiceImpl  implements  OrderService{
     public Order createOrder(Long memberId, String itemName, int itemPrice) {
         Member member = memberRepository.findById(memberId);
         int discountPrice = discountPolicy.discount(member, itemPrice);
-        //할인은  discount가 알아서 해주는거! -> 단일 책임 원칙 잘 지킴!
 
         return new Order(memberId, itemName, itemPrice, discountPrice);
     }
